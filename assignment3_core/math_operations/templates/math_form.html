@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment #3 - Input Form</title>
+</head>
+<body>
+    <h1>Enter values for x, y, z</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>x: <input type="number" name="x"></label><br>
+        <label>y: <input type="number" name="y"></label><br>
+        <label>z: <input type="number" name="z"></label><br>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
